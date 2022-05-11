@@ -1,4 +1,4 @@
 - name: trigger maintenance mode
   hosts: all
   roles:
-    - ../../backup-nextcloud
+    - ../../backup_nextcloud
