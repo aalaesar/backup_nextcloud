@@ -1,3 +1,4 @@
+---
 - name: trigger maintenance mode
   hosts: all
   roles:
