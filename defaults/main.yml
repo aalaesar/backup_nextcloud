@@ -1,5 +1,5 @@
 ---
-### APPLICATION SETTINGS ##
+### APPLICATION SETTINGS ###
 nextcloud_instance_name: "nextcloud"
 nextcloud_backup_target_dir: "/opt/nextcloud_backups"
 nextcloud_webroot: "/opt/nextcloud"
@@ -7,6 +7,10 @@ nextcloud_webroot: "/opt/nextcloud"
 nextcloud_websrv_user: www-data
 
 nextcloud_exit_maintenance_mode: true
+
+### ANSIBLE SETTINGS ###
+ansible_become_method: "su"
+ansible_become_flags: "-s /bin/sh"
 
 ### ARCHIVE PROPERTIES ###
 nextcloud_backup_suffix: ""
